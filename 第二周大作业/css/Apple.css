@@ -1,0 +1,686 @@
+
+/*字体边框等初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+ padding: 0;
+ margin: 0;
+ }
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ }
+fieldset,img {
+ border: 0;
+ }
+ img {
+ display:block;
+ }
+ input,button,textarea,select,optgroup,option {
+    font-family:inherit;
+    font-size:inherit;
+    font-style:inherit;
+    font-weight:inherit;
+}
+address,caption,cite,code,dfn,th,var {
+ font-weight: normal;
+ font-style: normal;
+ }
+ol,ul{
+ list-style: none;
+ }
+ li{
+ 	list-style-type: none;
+ }
+caption,th {
+ text-align: left;
+ }
+h1,h2,h3,h4,h5,h6 {
+ font-weight: normal;
+ font-size: 100%;
+ }
+q:before,q:after {
+ content:'';
+ }
+abbr,acronym { border: 0;
+ }
+
+a {
+text-decoration:none;
+}
+p{word-wrap:break-word}
+select {  
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/  
+  border: solid 1px #000;  
+  
+  /*很关键：将默认的select选择框样式清除*/  
+  appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none;  
+  
+  /*在选择框的最右侧中间显示小箭头图片*/  
+  background: url(../images/con-arrow.png) no-repeat scroll right 9px center transparent;  
+  
+  
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/  
+  padding-right: 14px;  
+  padding-right: 5px;
+  border-color: rgb(169,169,169);
+}  
+
+body{
+	font-size: 17px;
+}
+/*header css*/
+#navigationbar{
+	width: auto;
+	height: 50px;
+    background-color: rgba(0,0,0,0.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8000000,endColorstr=#C8000000);
+	font-family: 	"SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#navigationbarul{
+	width: 78%;
+	position: absolute;
+	left:22%;
+	top:  30%;
+}
+.navigationbarli{
+    height: 44px;
+	display: block;
+	float: left;
+	margin-left: 7%;
+}
+
+.navigationbara{
+	height: 44px;
+	font-size: 14px;
+	color: rgb(255,255,255);
+}
+#navigationbarli1{
+	width: 20px;
+	height: 44px;
+	float: left;
+	margin-top: -13px;
+	margin-left: 0;
+}
+#navigationbara1{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/image_large_apple.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+#navigationbarli2{
+	position: absolute;
+	left: 2%;
+}
+#navigationbarli3{
+	position: absolute;
+	left: 10%;
+}
+#navigationbarli4{
+	position: absolute;
+	left: 18%;
+}
+#navigationbarli5{
+	position: absolute;
+	left: 26%;
+}
+#navigationbarli6{
+	position: absolute;
+	left: 34%;
+}
+#navigationbarli7{
+	position: absolute;
+	left: 42%;
+}
+#navigationbarli8{
+	position: absolute;
+	left: 55%;
+}
+#navigationbarli9{
+	position: absolute;
+	left: 61%;
+}
+#navigationbarli
+.svg{
+	position: absolute;
+	left: 0%;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+.navigationbara:hover{
+	opacity: 0.7;
+}
+#navigationbara7{
+	opacity: 0.7;
+}
+#navigationbarli8{
+	width: 20px;
+	height: 44px;
+	float: left;
+	margin-left: 5%;
+	margin-top: -13px;
+}
+#navigationbara8{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/image_large_search.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+#navigationbarli9{
+	float: left;
+	width: 20px;
+	height: 44px;
+	margin-left: 5%;	
+	margin-top: -13px;
+}
+#navigationbara9{
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/image_large_bag.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+#top{
+    display: block;
+    margin-left: 22%;
+    width: 53%;
+   /* background-color: blue;*/
+}
+#top:after{
+	margin-left: 0;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 53%;
+	height: 1px;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.4);
+}
+#top p{
+	display: inline-block;
+	color: rgb(255,255,255);
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#topsupport{
+	font-size: 24px;
+}
+.top1{
+	color: white;
+	font-size: 0.7rem;
+	display: inline-block;
+	float: right;
+	margin-top: 25px !important;
+}
+#topsociety{
+	margin-right: 20px;
+}
+.top1:hover{
+	color: #6bf;
+}
+#welcome{
+	text-align: center;
+	font-size: 2.7rem;
+	color:#fff;
+	margin-top: 50px;
+}
+#helpwhenever{
+	text-align: center;
+	font-size: 1.3rem;
+	color:#fff;
+	margin-top: 35px;
+}
+#search{
+	width: 86%;
+	height: 100%;
+	outline: none;
+	padding-left: 10%;
+	padding-right: 10.2%;
+	color: #888;
+	border:none;
+	font-size: 0.9rem;
+	line-height: 2.3rem;
+}
+#searchbar{
+	margin-top: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -280px;
+	background-color:#fff;
+	padding-right: 35px;
+	height: 2.3rem;
+	width: 567px;
+	font-weight: 300;
+	border-radius: 3px;
+	color: #888;
+	border:1px solid #dedede;
+	font-size: 1.3rem;
+}
+#searchbutton{
+	display: block;
+	background-color: #fff;
+	background-image: url(../images/search_icon_black.jpg.svg);
+	background-repeat: no-repeat;
+	background-position:12px 50%;
+	background-size: 20px;
+	width: 5%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border:none;
+	cursor: pointer;
+}
+#main{
+	width: auto;
+	height: 4000px;
+
+}
+#helpandknow{
+	font-size: 2rem;
+	font-weight: 500;
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+#product_6{
+	width:100%;
+	height: 120px;
+	margin-top: 50px;
+}
+#product_6bar{
+	width: 80%;
+	height: 100%;	
+	margin:auto auto;
+	position: relative;
+}
+.product_6block{
+	width: 15%;
+	height: 100%;
+	position: absolute;
+}
+#product_6block2{
+	position: absolute;
+	left: 16%;
+}
+#product_6block3{
+	left: 32%;
+}
+#product_6block4{
+	left: 48%;
+}
+#product_6block5{
+	left: 64%;
+}
+#product_6block6{
+	left: 80%;
+}
+.product_6_div{
+	width: 64px;
+	height: 84px;
+	margin:auto;
+	margin-top: 0%;margin-bottom: 10px;
+}
+.product_6_img{
+	width: 64px;
+	height: auto;
+}
+.product_6_span{
+	display: block;
+	width: 100%;
+	position: absolute;
+	margin-top: -15%;
+	text-align: center;
+	font-size: 15px;
+	color: black;
+}
+.product_6block:hover >span{
+	text-decoration-line: underline;
+}
+#product_6:after{
+	margin-left: 0;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	background-color: rgba(222,222,222,0.6);
+}
+#productlist_a{
+	position: absolute;
+	left: 50%;
+	margin-left: -57px;
+	width: 114px;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 20px;
+}
+#productlist{
+	color:rgb(0,112,201);
+	font-size: 0.8rem;
+	line-height: 1rem;
+}
+#productlistplus:after{
+	content: "+";
+	font-size:1rem;
+	color: rgb(0,112,201);
+}
+#productlistbar:after{
+	margin-left: 0;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	background-color: rgba(222,222,222,0.6);
+	margin-top: 70px;
+}
+#approw{
+	width: 100%;
+	height: 290px;
+	margin-top: -20px;
+}
+#appblock{
+	width: 65%;
+	height:255px;
+	margin-top: 57px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+	position: relative;
+}
+#appblock_text{
+	width:48%;
+	height: 100%;
+	position: absolute;
+}
+#appblock_img{
+     width:48%;
+	height: 100%;
+	background: purple;
+	position: absolute;
+	left: 50%;
+}
+#appblock_text_h2{
+	font-size: 1.6rem;
+	font-family: "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+#appblock_text_p{
+	font-weight: 300;
+	margin-top: 20px;
+}
+.appblock_text_div{
+	margin-top: 20px;
+	width: 100%;
+}
+.appblock_text_a{
+	font-size: 1rem;
+	margin-top: 20px;
+	color: rgb(0,112,201);
+}
+.rightarrow:after{
+    content: ">";
+}
+.rightarrow:hover{
+    text-decoration: underline;
+}
+#appblock_img{
+	background: url(../images/featured-section-high-sierra-ios11_2x.png) no-repeat ;
+	background-size: 80%;
+	background-position: 0 -40px;
+}
+.appblock_text_a:hover{
+	text-decoration-line: underline;
+}
+#approw:after{
+	margin-left: 0;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	background-color: rgba(222,222,222,0.6);
+	margin-top: 20px;
+}
+#contentlinkbar{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	margin-top: 40px;
+}
+#contentlink{
+	width: 70%;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+}
+#contentlink:after{
+    margin-left: 0;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	background-color: rgba(222,222,222,0.6);
+	margin-top: 320px;
+}
+.contentlinkblock{
+	width: 48%;
+	height: 100%;	
+	position: absolute;
+}
+#contentlinkimg1{
+	display: block;
+	background: url(../images/apple-care-products_2x.png) no-repeat;
+	width: 50%;
+	height: 40%;
+	background-size: contain;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+}
+.contentlinktext{
+	width: 100%;
+	height: 50%;
+	margin-top: 30%;
+}
+.contentlinkh3{
+	margin-top: -20px;
+	font-weight: 500;
+	font-size: 1.7rem;
+	margin-bottom: 10px;
+}
+.contentlinkp{
+	font-weight: normal;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+.contentlinka{
+	font-weight: normal;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+	color: rgb(0,112,201);
+}
+#contentlinkimg2{
+	display: block;
+	background: url(../images/repair_2x.png) no-repeat;
+	width: 50%;
+	height: 40%;
+	background-size: contain;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+}
+.contentlinkpa{
+	display: inline-block;
+    color: rgb(0,112,201);
+}
+.contentlinkpa:hover{
+	text-decoration-line: underline;
+}
+#counterfeitbar{
+	width:100%;
+	height: 200px;
+	margin-top: 50px;
+}
+#counterfeit{
+	width: 70%;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+	text-align: center;
+}
+#counterfeit_h3{
+	font-size:1.2rem;
+	font-weight: 500;
+}
+#counterfeit p{
+	margin-top: 20px;
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+.counterfeit_p_a{
+	color:rgb(0,112,201);
+}
+.counterfeit_p_a:hover{
+	text-decoration: underline;
+}
+#lessonbar{
+	width:100%;
+	height: 500px;
+    background: yellow;
+    background: url(../images/today-at-apple-workshop-banner.image.large_2x.jpg) no-repeat;
+    background-size:contain;
+    position: relative;
+}
+#lessonrow{
+	width: 80%;
+	height: 40%;
+	position: absolute;
+	left: 10%;
+	top:10%;
+
+}
+#lessonrow_h3{
+	display: block;
+	width: 400px;
+	height: 94px;
+	font-size:1.7rem;
+	font-weight: 500;
+	line-height: 3rem;
+	color: white;
+}
+#lessonrow_p{
+	position: absolute;
+	top: 55%;
+	font-size: 0.8rem;
+	color: white;
+}
+#lessonrow_a{
+	position: absolute;
+	top: 75%;
+	color:rgb(0,112,201);
+	font-size: 0.8rem;
+}
+
+
+
+#questionbar{
+	width: 100%;
+	height: 300px;
+	position: relative;
+	margin-top: 40px;
+}
+#question{
+	width: 70%;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -35%;
+}
+#questionbar:after{
+    margin-left: 0;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	background-color: rgba(222,222,222,0.6);
+	margin-top: 320px;
+}
+.questionblock{
+	width: 48%;
+	height: 100%;	
+	position: absolute;
+}
+#questionimg1{
+	display: block;
+	background: url(../images/contentlink-communities_2x.png) no-repeat;
+	width: 50%;
+	height: 40%;
+	background-size: contain;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+}
+.questiontext{
+	width: 100%;
+	height: 50%;
+	margin-top: 30%;
+}
+.questionh3{
+	margin-top: -20px;
+	font-weight: 500;
+	font-size: 1.7rem;
+	margin-bottom: 10px;
+}
+.questionp{
+	font-weight: normal;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+.questiona{
+	font-weight: normal;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+	color: rgb(0,112,201);
+}
+#questionimg2{
+	display: block;
+	background: url(../images/artcol-contentlink-expert_2x.png) no-repeat;
+	width: 50%;
+	height: 40%;
+	background-size: contain;
+	position: absolute;
+	left: 50%;
+	margin-left: -25%;
+}
+.questionpa{
+	display: inline-block;
+    color: rgb(0,112,201);
+}
+.questionpa:hover{
+	text-decoration-line: underline;
+}
+#protectbar{
+	width: 100%;
+	height: 300px;
+	background: yellow;
+	margin-top: 50px;
+}
+
+
